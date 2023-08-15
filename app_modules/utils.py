@@ -339,6 +339,7 @@ def load_tokenizer_and_model(base_model,adapter_model,load_8bit=False):
             adapter_model,
             torch_dtype=torch.float16,
         )
+        model.to(device)
     elif device == "mps":
         model = AutoModelForCausalLM.from_pretrained(
             base_model,
@@ -363,7 +364,5 @@ def load_tokenizer_and_model(base_model,adapter_model,load_8bit=False):
 
     # if not load_8bit:
     #     model.half()  # seems to fix bugs for some users.
-
-    model = model.to("cpu")
     model.eval()
     return tokenizer,model,device

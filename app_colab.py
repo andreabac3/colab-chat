@@ -226,6 +226,8 @@ with gr.Blocks(css=customCSS, theme=small_and_beautiful_theme) as demo:
         show_progress=True,
     )
 
+    gr.launch(demo, share=True, inbrowser=True, debug=True, favicon_path="./assets/favicon.ico")
+
 demo.title = "Fauno - Italian LLM"
 
 if __name__ == "__main__":
