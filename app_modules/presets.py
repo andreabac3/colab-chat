@@ -5,12 +5,13 @@ import gradio as gr
 title = """<h1 align="left" style="min-width:200px; margin-top:0;"> <img src="favicon.ico" width="32px" style="display: inline"> Fauno </h1>"""
 description_top = """\
 <div align="left" style="margin:16px 0">
+Fauno: The Italian Large Language Model that will leave you senza parole!
 Disclaimer: The model output is not censored and the authors do not endorse the opinions in the generated content. Use at your own risk.
 </div>
 """
 description = """\
 <div align="center" style="margin:16px 0">
-The demo is built on <a href="https://github.com/GaiZhenbiao/ChuanhuChatGPT">ChuanhuChatGPT</a>.
+Fauno Demo.
 </div>
 """
 CONCURRENT_COUNT = 100

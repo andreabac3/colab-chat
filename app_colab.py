@@ -144,14 +144,14 @@ with gr.Blocks(css=customCSS, theme=small_and_beautiful_theme) as demo:
                     temperature = gr.Slider(
                         minimum=-0,
                         maximum=2.0,
-                        value=1,
+                        value=0.1,
                         step=0.1,
                         interactive=True,
                         label="Temperature",
                     )
                     max_length_tokens = gr.Slider(
                         minimum=0,
-                        maximum=512,
+                        maximum=250,
                         value=512,
                         step=8,
                         interactive=True,
