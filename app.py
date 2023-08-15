@@ -39,23 +39,17 @@ def predict(text,
         begin_length = len(prompt)
     
     input_ids = inputs["input_ids"].to(device)
-
+    user_tag, assistant_tag = "### User: ", "### Assistant: "
     with torch.no_grad():
-        for x in greedy_search(input_ids,model,tokenizer,stop_words=["[|Human|]", "[|AI|]"],max_length=max_length_tokens,temperature=temperature,top_p=top_p):
-            if is_stop_word_or_prefix(x,["### User: ", "### Assistant: "]) is False:
-                if "### User: " in x:
-                    x = x[:x.index("### User: ")].strip()
-                elif "[| Human |]" in x:
-                    x = x[:x.index("[| Human |]")].strip()
-                elif "[| Umano |]" in x:
-                    x = x[:x.index("[| Umano |]")].strip()
-                elif "[|Umano|]" in x:
-                    x = x[:x.index("[|Umano|]")].strip()
-                if "### Assistant: " in x:
-                    x = x[:x.index("### Assistant: ")].strip() 
+        for x in greedy_search(input_ids,model,tokenizer,stop_words=[user_tag, assistant_tag],max_length=max_length_tokens,temperature=temperature,top_p=top_p):
+            if is_stop_word_or_prefix(x,[user_tag, assistant_tag]) is False:
+                if user_tag in x:
+                    x = x[:x.index(user_tag)].strip()
+                if assistant_tag in x:
+                    x = x[:x.index(assistant_tag)].strip() 
                 x = x.strip(" ")   
                 a, b = [[y[0],convert_to_markdown(y[1])] for y in history]+[[text, convert_to_markdown(x)]],history + [[text,x]]
-                yield a, b, "Generating……"
+                yield a, b, "Fauno is Generating……"
             if shared_state.interrupted:
                 shared_state.recover()
                 try:
@@ -224,5 +218,5 @@ demo.title = "Fauno - Italian LLM"
 if __name__ == "__main__":
     reload_javascript()
     demo.queue(concurrency_count=CONCURRENT_COUNT).launch(
-        share=False, favicon_path="./assets/favicon.ico", inbrowser=True
+        share=True, favicon_path="./assets/favicon.ico", inbrowser=False
     )
