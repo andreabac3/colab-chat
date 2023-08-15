@@ -15,10 +15,10 @@ logging.basicConfig(
 
 
 import argparse
-
-argparse.add_argument("--base_model", type=str, default="stabilityai/StableBeluga-7B")
-argparse.add_argument("--adapter_model", type=str, default="andreabac3/Fauno-V2-7B-4bit")
-args = argparse.parse_args()
+parser = argparse.ArgumentParser()
+parser.add_argument("--base_model", type=str, default="stabilityai/StableBeluga-7B")
+parser.add_argument("--adapter_model", type=str, default="andreabac3/Fauno-V2-7B-4bit")
+args = parser.parse_args()
 
 base_model = args.base_model
 
