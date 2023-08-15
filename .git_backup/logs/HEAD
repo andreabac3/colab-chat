@@ -1,0 +1,12 @@
+0000000000000000000000000000000000000000 183dee7fabc9dfbee2a3323886a5c35cf1875b98 andreabac3 <andreabac3@gmail.com> 1692018301 +0200	clone: from https://huggingface.co/spaces/andreabac3/Fauno/
+183dee7fabc9dfbee2a3323886a5c35cf1875b98 4fdf3f9a28a2d528997d3dc7394811b48e643e67 andreabac3 <andreabac3@gmail.com> 1692018672 +0200	commit: added webapp
+4fdf3f9a28a2d528997d3dc7394811b48e643e67 d6291e913ac6cd47f98753c475ebf816ad5678df andreabac3 <andreabac3@gmail.com> 1692018805 +0200	commit: dependencies
+d6291e913ac6cd47f98753c475ebf816ad5678df fe3437cd5485ae2ae40ad1f75fee94d9e86bd8d9 andreabac3 <andreabac3@gmail.com> 1692019076 +0200	commit: dependencies
+fe3437cd5485ae2ae40ad1f75fee94d9e86bd8d9 119208e725b87ab7f33a4a3cff48b0b44aaa816b andreabac3 <andreabac3@gmail.com> 1692019378 +0200	commit: dependencies
+119208e725b87ab7f33a4a3cff48b0b44aaa816b 5993ef36266a52b827c6090cf1dc158a735a3abd andreabac3 <andreabac3@gmail.com> 1692019702 +0200	commit: add assets
+5993ef36266a52b827c6090cf1dc158a735a3abd bfc6b9990dae3c7294efda9a5a546c73292f587f andreabac3 <andreabac3@gmail.com> 1692020290 +0200	commit: load model 4bit
+bfc6b9990dae3c7294efda9a5a546c73292f587f f7f611b12f0504fa4a03163d31b376b9570b29b7 andreabac3 <andreabac3@gmail.com> 1692026608 +0200	pull: Fast-forward
+f7f611b12f0504fa4a03163d31b376b9570b29b7 c1f9b76621d25106a82a4040b22137c288c13a48 andreabac3 <andreabac3@gmail.com> 1692026648 +0200	commit: update
+c1f9b76621d25106a82a4040b22137c288c13a48 1df1ff73ff1b3cf7a8691d5bae3219a9867cc71b andreabac3 <andreabac3@gmail.com> 1692027524 +0200	commit: specified cpu
+1df1ff73ff1b3cf7a8691d5bae3219a9867cc71b e19e9c36ea712d50b21d23d028003d56843d9373 andreabac3 <andreabac3@gmail.com> 1692028342 +0200	commit: specified cpu
+e19e9c36ea712d50b21d23d028003d56843d9373 a79c6669260fd9ab4092cf92fe671c0776633a84 andreabac3 <andreabac3@gmail.com> 1692031317 +0200	commit: specified cpu
