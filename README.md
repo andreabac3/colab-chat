@@ -1,12 +1,7 @@
----
-title: Fauno
-emoji: 💻
-colorFrom: red
-colorTo: gray
-sdk: gradio
-sdk_version: 3.40.1
-app_file: app.py
-pinned: false
----
+# Fauno v2
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+
+## How to use it
+
+Upload on colab the colab_demo.ipynb and then run all the cells with GPU-run time.
+
